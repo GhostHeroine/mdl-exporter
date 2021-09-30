@@ -437,7 +437,7 @@ class War3Model:
                     
                 if root.anim_rot is not None:
                     self.register_global_sequence(root.anim_rot)
-                    if obh.parent is not None:
+                    if obj.parent is not None:
                         root.anim_rot.transform_rot(obj.parent.matrix_world.inverted())
                     root.anim_rot.transform_rot(settings.global_matrix)
                 
